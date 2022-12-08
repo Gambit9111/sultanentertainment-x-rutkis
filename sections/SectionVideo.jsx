@@ -2,26 +2,24 @@ import React from 'react'
 
 function SectionVideo() {
   return (
-    <div className='h-screen'>
-      <div>Sectionvideo</div>
-      <hr className='bg-red-500' />
+    <div className='h-full'>
 
-      <div className='h-full flex flex-col items-center p-6 mr-4 lg:mr-0'>
-        <div className='basis-1/6 mb-20 flex items-center w-full justify-evenly'>
-          <div className='pt-10'><h1 className='text-4xl'>Medium lenght headline goes here</h1></div>
-          <div className='flex flex-col h-full justify-evenly'>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsum vero excepturi, ducimus harum eos!</h1>
-            <div className='flex gap-2'>
-              <button className='my-button'>button</button>
-              <button className='my-button'>button</button>
-            </div>
-          </div>
+      <div className='md:flex md:flex-row md:pt-12'>
+
+        <h1 className='font-bold text-[40px] leading-[48px] pb-7 px-6 md:px-0 md:pb-0 text-center md:text-left md:w-6/12'>Medium lenght hero headline goes here</h1>
+
+        <div className='md:flex md:flex-col md:w-6/12'>
+          <p className='pb-10 text-left px-5 md:px-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat
+          </p>
+          <nav className='px-5 pb-8 md:px-0'>
+            <button className='my-button'>Button</button>
+            <button className='my-button text-black bg-white border border-black'>Button</button>
+          </nav>
         </div>
 
-        <div className='bg-gray-400 basis-3/6 w-full lg:w-9/12'>
-          VIDEO
-        </div>
       </div>
+
+      <iframe className='w-full h-[250px] sm:h-[450px] p-3 md:pt-12 md:px-0 md:pb-0' src="https://www.youtube.com/embed/HLQ1cK9Edhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
   )

@@ -12,13 +12,17 @@
 
     body {
         /* @apply bg-[url('/bg.jpg')] bg-cover bg-fixed; */
-        @apply bg-slate-900 text-lime-400 bg-fixed bg-cover overflow-hidden
+        @apply bg-white text-black bg-fixed bg-cover overflow-hidden
+    }
+
+    html {
+      font-family: Roboto, system-ui, font-sans;
     }
 }
 
 @layer components {
   .my-button {
-    @apply bg-gradient-to-r from-lime-200 via-lime-600 to-lime-900 text-black font-bold py-1 px-4 rounded-sm;
+    @apply w-[96px] h-[48px] bg-black text-white text-base;
   }
 }
 

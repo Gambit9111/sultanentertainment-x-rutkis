@@ -1,10 +1,14 @@
 import Header from '../Header'
+import Grid from '../Grid'
+import Image from 'next/image'
 
 function LayoutMain({ children }) {
   return (
-    <div className='flex flex-col'>
+    <div>
         <Header />
-        {children}
+        <div>
+          {children}
+        </div>
     </div>
   )
 }
