@@ -21,7 +21,7 @@ const SectionTrack = () => {
 
 function SectionTracks() {
   return (
-    <div className="h-[1000px] mt-12 lg:mt-56">
+    <div className="mt-12 lg:mt-56">
         <h3 className="font-semibold text-center pb-6">Songs</h3>
         <h1 className="text-[56px] leading-[67px] text-center font-bold px-1 pb-6">Newest tracks by our artists</h1>
         <div>

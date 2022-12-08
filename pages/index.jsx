@@ -29,6 +29,14 @@ export default function Home() {
         <SectionTracks />
       </section>
 
+      <section id='socialmedia'>
+        <SectionSocialMedia />
+      </section>
+
+      <section id='artists'>
+        <SectionArtists />
+      </section>
+
       {/* <section id="sponsors" className='snap-center'>
         <SectionSponsors />
       </section>

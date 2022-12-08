@@ -1,17 +1,14 @@
 import React from 'react'
+import Image from 'next/image'
 
 function SectionSocialMedia() {
   return (
-    <div className='h-screen pt-20'>
-      <div>SectionSocialMedia</div>
-      <hr className='bg-red-500' />
-      <div className='flex flex-col items-center justify-evenly h-[80%]'>
-        <h1 className='text-1xl'>Follow us on social media</h1>
-        <h1 className='text-3xl'>Hover over link one</h1>
-        <h1 className='text-3xl'>Hover over link one</h1>
-        <h1 className='text-3xl'>Hover over link one</h1>
-        <h1 className='text-3xl'>Hover over link one</h1>
-      </div>
+    <div className='text-center flex flex-col gap-10 mt-12 md:mt-14 lg:mt-52'>
+        <h1 className='font-semibold'>Follow us on social media</h1>
+        <h1 className='text-2xl font-bold'>Hover over link one</h1>
+        <h1 className='text-2xl font-bold'>Hover over link two</h1>
+        <h1 className='text-2xl font-bold'>Hover over link three</h1>
+        <h1 className='text-2xl font-bold'>Hover over link four</h1>
     </div>
   )
 }

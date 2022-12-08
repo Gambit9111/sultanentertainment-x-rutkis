@@ -1,49 +1,39 @@
 import React from 'react'
+import Image from 'next/image'
 
-const SectionCard = ({ name, title, description, url  }) => {
+const SectionCard = () => {
   return (
-    <div className='flex border m-4 gap-2'>
+    <div className='h-[125px] lg:h-[250px] flex gap-6 md:w-8/12 lg:w-full md:mx-auto'>
+      <Image src='/placeholderbig.svg' width={127} height={125} className="lg:w-[250px] lg:h-[250px]"/>
+
       <div>
-        <img src={url} alt={name} />
-      </div>
-      <div className='flex flex-col justify-evenly'>
-        <div>
-          <h3>{name}</h3>
-          <h4>{title}</h4>
-          <p>{description}</p>
-        </div>
-        <div className='flex gap-2'>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
+        <h3 className='font-semibold lg:text-xl'>Full name</h3>
+        <h3 className='pb-3 lg:text-lg'>Job title</h3>
+        <p className='text-sm lg:text-base pr-4 pb-2 lg:pb-4 lg:pr-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repudiandae alias distinctio quod architecto.</p>
+        <div className='flex gap-4'>
+          <Image src='/icon1.svg' width={18} height={18}/>
+          <Image src='/icon2.svg' width={18} height={16}/>
+          <Image src='/icon3.svg' width={18} height={18}/>
         </div>
       </div>
-    </div>
+  </div>
   )
 }
 
 function SectionArtists() {
   return (
-    <div className='h-screen pt-20'>
-      <div>SectionArtists</div>
-      <hr className='bg-red-500' />
-
-      <div className='flex flex-col lg:flex-row h-[80%] justify-evenly items-center mr-4 p-1 lg:mr-0 lg:p-0'>
-        <div className='border h-[70%] flex flex-col gap-8'>
-            <h1 className='text-2xl'>Our Team</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, fuga sint? Ut.</p>
-            <div>
-              <button className='my-button'>button</button>
-            </div>
-        </div>
-
-        <div className='flex flex-col gap-4'>
-          <SectionCard name={'name'} title={'lorem ipsum shuda'} description={'Nuirnahuixuinurinauhisnxiuniu...'} url={'https://picsum.photos/200'} />
-          <SectionCard name={'name'} title={'lorem ipsum shuda'} description={'Nuirnahuixuinurinauhisnxiuniu...'} url={'https://picsum.photos/200'} />
-          <SectionCard name={'name'} title={'lorem ipsum shuda'} description={'Nuirnahuixuinurinauhisnxiuniu...'} url={'https://picsum.photos/200'} />
-        </div>
+    <div className='h-[1000px] mt-16 lg:flex lg:mt-32 lg:gap-20'>
+      <div className='lg:w-9/12'>
+        <h3 className='font-semibold pb-4 px-2'>Artists</h3>
+        <h1 className='text-[48px] leading-[58px] font-bold pb-6 px-2'>Our team</h1>
+        <p className='pb-8 pr-10 px-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, voluptate. Perferendis veritatis minus sunt eum.</p>
+        <button className='my-button bg-white border border-black text-black w-[140px] mx-2 mb-8'>Find out more!</button>
       </div>
-
+      <div className='flex flex-col h-[740px] gap-24 md:mt-6 lg:gap-12'>
+        <SectionCard />
+        <SectionCard />
+        <SectionCard />
+      </div>
     </div>
   )
 }
