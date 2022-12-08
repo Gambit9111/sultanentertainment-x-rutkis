@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-function SectionVideo() {
+function SectionSponsors() {
   return (
-    <div className='relative h-[800px] pt-10 lg:mt-20'>
+    <div className='relative pt-10 lg:mt-20'>
       <h2 className='text-lg font-bold text-center pb-32 lg:pb-64'>People are writting about us!</h2>
       <Image src='/strip.svg' width={1544} height={56} className="max-w-none absolute right left-[-160px] top-[100px]"/>
       <h1 className='font-bold text-[40px] leading-[48px] pb-6 text-center'>Medium lenght heading goes here</h1>
@@ -16,4 +16,4 @@ function SectionVideo() {
   )
 }
 
-export default SectionVideo
+export default SectionSponsors

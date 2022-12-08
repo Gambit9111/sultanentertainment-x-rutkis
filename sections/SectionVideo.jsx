@@ -1,6 +1,7 @@
 import React from 'react'
 
 function SectionVideo() {
+
   return (
     <div className='h-full'>
 
@@ -19,7 +20,7 @@ function SectionVideo() {
 
       </div>
 
-      <iframe className='w-full h-[250px] md:h-[450px] lg:h-[700px] lg:mx-auto p-3 md:pt-12 md:px-0 md:pb-0' src="https://www.youtube.com/embed/HLQ1cK9Edhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe loading="lazy" className='w-full h-[250px] md:h-[450px] lg:h-[700px] lg:mx-auto p-3 md:pt-12 md:px-0 md:pb-0' src="https://www.youtube.com/embed/HLQ1cK9Edhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
   )

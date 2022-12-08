@@ -25,6 +25,10 @@ export default function Home() {
         <SectionSponsors />
       </section>
 
+      <section id="tracks">
+        <SectionTracks />
+      </section>
+
       {/* <section id="sponsors" className='snap-center'>
         <SectionSponsors />
       </section>
