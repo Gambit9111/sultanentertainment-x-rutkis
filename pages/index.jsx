@@ -37,6 +37,10 @@ export default function Home() {
         <SectionArtists />
       </section>
 
+      <section id='footer'>
+        <SectionFooter />
+      </section>
+
       {/* <section id="sponsors" className='snap-center'>
         <SectionSponsors />
       </section>
